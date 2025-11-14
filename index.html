@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WATTAM - Matériel Électrique & Travaux Divers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="main.js"></script>
+<body>
+    <!-- En-tête -->
+<header>
+    <div class="container header-flex">
+        <div class="logo-container">
+            <a href="#accueil">
+                <img src="images/logo.png" alt="WATTAM Logo">
+            </a>
+            <span class="tagline">Matériel Électrique & Travaux Divers</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#produits">Produits</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- Bannière principale -->
+<section id="accueil" class="hero">
+    <div class="container hero-content">
+        <h2>Solutions Électriques Professionnelles</h2>
+        <p>Votre partenaire de confiance pour tous vos projets électriques au Maroc</p>
+        <a href="#contact" class="btn">Demander un Devis</a>
+    </div>
+</section>
+
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Vente de Matériel</h3>
+                    <p>Large gamme de produits électriques de qualité pour professionnels et particuliers.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Installation</h3>
+                    <p>Installation professionnelle de systèmes électriques résidentiels et industriels.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Diagnostic</h3>
+                    <p>Identification et résolution des problèmes électriques avec précision.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hammer"></i>
+                    <h3>Travaux Divers</h3>
+                    <p>Services complets pour tous vos besoins en construction et rénovation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Produits -->
+    <section id="produits" class="products">
+        <div class="container">
+            <h2>Nos Produits</h2>
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="les disjoncteur">les disjoncteur</button>
+                <button class="filter-btn" data-filter="Les disjoncteur haut poteau">Les disjoncteur haut poteau</button>
+                <button class="filter-btn" data-filter="Interrupteur iacm">Interrupteur iacm</button>
+                <button class="filter-btn" data-filter="Almelec">Almelec</button>
+                <button class="filter-btn" data-filter="Les parafoudres">Les parafoudres</button>
+                <button class="filter-btn" data-filter="Pinces d'ancrages">Pinces d'ancrages</button>
+                <button class="filter-btn" data-filter="Projecteurs">Projecteurs</button>
+                <button class="filter-btn" data-filter="Contacteur">Contacteur</button>
+
+
+
+            </div>
+            <div class="products-grid">
+                <!-- Les produits seront chargés dynamiquement via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>À Propos de WATTAM</h2>
+                <p>Fondée au Maroc, WATTAM est une entreprise spécialisée dans la vente et la négociation de matériel électrique ainsi que dans la réalisation de travaux divers. Notre mission est de fournir des solutions électriques fiables et de qualité à nos clients.</p>
+                <p>Avec une équipe d'experts qualifiés et un engagement envers l'excellence, nous nous efforçons de dépasser les attentes de nos clients dans chaque projet que nous entreprenons.</p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="number" data-count="20">0</span>+
+                        <span class="label">Ans d'expérience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" data-count="500">0</span>+
+                        <span class="label">Clients satisfaits</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" data-count="500">0</span>+
+                        <span class="label">Projets réalisés</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/about.jpg" alt="Équipe WATTAM">
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-Nous</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Coordonnées</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Adresse: Lot Assalam, N 299 Mediouna Casablanca</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>Téléphone: +212 5 22 33 84 72</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email: Wattam.elec@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Horaires: Lundi - Vendredi: 8h00 - 18h00</p>
+                    </div>
+                    <div class="social-links">
+                    
+                        <a href="https://www.instagram.com/wattam.sarlau/"><i class="fab fa-instagram"></i></a>
+                       
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+  <form id="contact-form">
+    <div class="form-group">
+      <input type="text" id="name" placeholder="Votre nom" required>
+    </div>
+    <div class="form-group">
+      <input type="email" id="email" placeholder="Votre email" required>
+    </div>
+    <div class="form-group">
+      <input type="tel" id="phone" placeholder="Votre téléphone">
+    </div>
+    <div class="form-group">
+      <select id="subject" required>
+        <option value="">Sujet de votre message</option>
+        <option value="devis">Demande de devis</option>
+        <option value="produit">Information sur un produit</option>
+        <option value="service">Demande de service</option>
+        <option value="autre">Autre</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <textarea id="message" rows="5" placeholder="Votre message" required></textarea>
+    </div>
+    <button type="submit" class="btn">Envoyer</button>
+  </form>
+</div>
+
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>WATTAM</h3>
+                    <p>Votre partenaire de confiance pour tous vos besoins en matériel électrique et travaux divers au Maroc.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Liens Rapides</h3>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#produits">Produits</a></li>
+                        <li><a href="#apropos">À Propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Adresse: Lot Assalam, N 299 Mediouna Casablanca</p>
+                    <p>+212 5 22 33 84 72</p>
+                    <p>Wattam.elec@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WATTAM. Tous droits réservés.</p>
+            </div>
+        </div>
+        
+    </footer>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="script.js"></script>
+
+    
+</body>
+</html>
